@@ -1,0 +1,9 @@
+# Method to take input from user during execution
+
+import sys
+
+print(sys.argv)  #It will give o/p as a list
+
+######################################################################
+Run----- python3 a.py 2 3 4 5
+o/p----- [a.py,2,3,4,5]
