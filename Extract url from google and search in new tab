@@ -1,0 +1,15 @@
+from googlesearch import search
+import webbrowser
+
+url=input("enter search command")
+
+l=[]
+
+for i in search(url,stop=5):
+        l.append(i)
+
+
+print(l)
+
+for i in l:
+        webbrowser.open_new_tab(i)
