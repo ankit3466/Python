@@ -1,0 +1,11 @@
+import os
+
+b=input("Enter the path")
+n=int(input("Enter no of directories"))
+a=input("Enter basic name of Directory")
+
+os.chdir(b)
+for i in range(n):
+    command='mkdir '+a+str(i)
+    os.system(command)
+    
