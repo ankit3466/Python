@@ -1,0 +1,11 @@
+# Name of users present in linux os
+
+import grp
+
+groups = grp.getgrall()
+
+for group in groups:
+    for user in group[3]:
+        print(user)
+        
+############################################################
