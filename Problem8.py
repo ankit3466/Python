@@ -15,6 +15,7 @@ else:
 	f.write(str(com))
 	f.write('\n')
 	f.close()
+	
 	if subprocess.getstatusoutput(com)[0] == 0:
 		print(subprocess.getoutput(com))
 	else:
