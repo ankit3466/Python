@@ -23,7 +23,7 @@ elif(c=='2'):
 
 elif(c=='3'):
 	a=input("enter file name : ")
-	f=open(a,'r')
-	f.close()
+	print("command run successfully")
+	exit()
 else:
 	print("Invalid Input...")
