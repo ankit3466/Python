@@ -1,6 +1,6 @@
 while True:
 	c=input("Enter minimum 500 characters")
-	if len(c)>=30:
+	if len(c)>=500:
 		break
 	else:
 		print("Less than 500 character not allowed")
@@ -32,7 +32,7 @@ print(d)
 c=""
 print("words occurs only one time :")
 for i in x:
-	if(d[i]==1 and len(c)<20):
+	if(d[i]==1 and len(c)<500):
 		c=c+i
 
 print(c)
