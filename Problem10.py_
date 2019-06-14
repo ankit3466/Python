@@ -6,6 +6,7 @@ port=4444
 
 a=s.socket(s.AF_INET,s.SOCK_DGRAM)
 c=1
+
 while c==1:
 	msg=raw_input("enter message")
 	a.sendto(msg,(ip,port))
