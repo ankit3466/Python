@@ -27,8 +27,7 @@ def add(*a):
 def sort(*v):
 	print(sorted(v))
 
+	
 def inst_mod():
 	x=os.system('pip3 list | wc -l')
 	print(x)
-
-
