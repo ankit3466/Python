@@ -29,5 +29,6 @@ def sort(*v):
 
 	
 def inst_mod():
+        help('modules')
 	x=os.system('pip3 list | wc -l')
 	print(x)
