@@ -27,4 +27,4 @@ numberofmails = EmailInformation[0]
 
 for i in range(numberofmails):
     for email in myEmailConnection.retr(i+1)[1]:
-        print(email)
+        print(email.decode('ascii'))
