@@ -1,3 +1,8 @@
+#!/usr/bin/python
+
+# use this code in python2 so that you dont need to refine the email
+# if this code use in python3 then you need to refine the email
+
 import poplib
 mailServer = 'pop.gmail.com'
 emailID = 'emailid@gmail.com'
@@ -7,7 +12,7 @@ emailPass = 'XXXXXXX'
 myEmailConnection = poplib.POP3_SSL(mailServer)
 
 ## print the response message from server
-print(myEmailConnection.getwelcome())
+print myEmailConnection.getwelcome()
 
 ## set email address
 myEmailConnection.user(emailID)
@@ -17,14 +22,14 @@ myEmailConnection.pass_(emailPass)
 
 ## get information about the email address
 EmailInformation = myEmailConnection.stat()
-print("Number of new emails: %s (%s bytes)" % EmailInformation)
+print "Number of new emails: %s (%s bytes)" % EmailInformation
 
 ## Reading an email
-print("\n\n===\nRead messages\n===\n\n")
+print "\n\n===\nRead messages\n===\n\n"
 
  ## Read all emails
 numberofmails = EmailInformation[0]
 
 for i in range(numberofmails):
     for email in myEmailConnection.retr(i+1)[1]:
-        print(email.decode('ascii'))
+        print email.decode('ascii')
