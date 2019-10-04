@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import socket as s
-ip="127.0.0.1"
+ip="127.0.0.1" # enter senders ip address
 port=4444
 
 x=s.socket(s.AF_INET,s.SOCK_DGRAM)
